@@ -112,7 +112,7 @@ li {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -156,6 +156,26 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.header-icon {
+margin-right: 10px;
+fill:var(--secondary-text-color);
+}
+
+.header-icon:hover,
+.header-icon:focus {
+  fill: var(--accent-color);
+}
+
+.header-envelope {
+  width: 16px;
+  height: 12px;
+  }
+
+  .header-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 /* Page Studio */
 
 /* Hero */
@@ -235,32 +255,17 @@ li {
   margin-right: 30px;
 }
 
-.work-item::before {
-  content: "";
-  display: block;
-  margin-bottom: 30px;
+
+.work-icons {
+margin-bottom: 30px;
+padding: 25px 100px;
   height: 120px;
-  background-color: var(--accent-bg-color) ;
+  background-color: var(--accent-bg-color);
   border-radius: 4px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.work-icon {
+  width: 70px;
+  height: 70px; 
 }
 
 /* Projects, Team */
@@ -307,7 +312,7 @@ li {
 }
 
 .team-card {
-  padding: 30px 10px;
+  padding: 30px 32px;
 }
 
 .team-name {
@@ -320,11 +325,41 @@ li {
 
 .position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
 }
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--white-title-color);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+ background-color: var(--accent-color);
+
+}
+
+
 
 /* Footer */
 .footer {
